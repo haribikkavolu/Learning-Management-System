@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2d4c223016.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <section class="header3">
+        <nav>
+            <a href="proj.html"><img src="pic/logo1.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="proj.html">HOME</a></li>
+                    <li><a href="videos.html">VIDEOS</a></li>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="test.html">TEST YOURSELF</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+     </section>
+     <section class="container">
+        <h1>videos on HTML and PYTHON</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="pic/html.jpeg">
+                    <img src="pic/play2.jpeg" class="play-btn"
+                    onclick="playVideo('pic/html1.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pic/ls2.jfif">
+                        <img src="pic/play2.jpeg" class="play-btn"
+                        onclick="playVideo('pic/magic.mp4')">
+                    </div>
+                    <p>learn html and python through multiple videos</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pic/py2.webp">
+                        <img src="pic/play2.jpeg" class="play-btn"
+                        onclick="playVideo('pic/python.mp4')">
+                    </div>
+                    <p>learn html and python through multiple videos</p>
+                </div>
+            </div>
+        </div>
+    </section>>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="pic/magic.mp4" type="video/mp4">
+        </video>
+        <img src="pic/close.png" class="close-btn"
+         onclick="stopVideo()">
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myvideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(){
+            myVideo.src= file;
+            videoPlayer.style.display = "block";
+        }
+
+        function playVideo(file){
+            myVideo.src= file;
+            videoPlayer.style.display = "block";
+        }
+
+        function playVideo(file){
+            myVideo.src= file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+     <section class="footer">
+        <h2>About US</h2>
+        <p>Empower your team to develop skills in all areas of business</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linked in"></i>
+        </div>
+     </section>
+</body>
+</html>

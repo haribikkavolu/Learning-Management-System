@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2d4c223016.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <section class="header5">
+        <nav>
+            <a href="proj.html"><img src="pic/logo1.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="proj.html">HOME</a></li>
+                    <li><a href="videos.html">VIDEOS</a></li>
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="test.html">TEST YOURSELF</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Test Yourself</h1>
+    </section>
+    <div class="questions">
+    Q1. what is HTML?<br>
+    <input type="radio " name="question1" id="correct1">hyper text mark up language<br>
+    <input type="radio" name="question1">hyper told mark language<br>
+    <input type="radio" name="question1">hero text mark language<br>
+    <input type="radio" name="question1">hyper textarea marked language<br>
+
+    Q2. what does CSS stands for?<br>
+    <input type="radio" name="question2">central style sheets<br>
+    <input type="radio" name="question2" id="correct2">cascading style sheet<br>
+    <input type="radio" name="question2">cascading simple shees<br>
+    <input type="radio" name="question2">cars suvs sailboats<br>
+
+    Q3. which tag is used to line break?<br>
+    <input type="radio" name="question3">a<br>
+    <input type="radio" name="question3" id="correct3">br<br>
+    <input type="radio" name="question3">hr<br>
+    <input type="radio" name="question3">style<br>
+
+    Q4. Choose the correct html element for the largest heading?<br>
+    <input type="radio" name="question4">heading<br>
+    <input type="radio" name="question4" id="correct4">h1<br>
+    <input type="radio" name="question4">h6<br>
+    <input type="radio" name="question4">head<br>
+
+    Q5. which of these elements are all table elements?<br>
+    <input type="radio" name="question5">table,head,tfoot<br>
+    <input type="radio" name="question5">head,body,tr<br>
+    <input type="radio" name="question5" id="correct5">table,tr,td<br>
+    <input type="radio" name="question5">table,tr,tt<br>
+
+    <input type="submit" name="submit" value="submitquiz" onclick="result()">
+
+    <script type="text/javascript">
+        function result(){
+            var score=0;
+            if (document.getElementById('correct1').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct2').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct3').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct4').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct5').checked)
+            {
+                score++;
+            }
+            document.write("your score is:"+score);
+        }
+    </script>
+    </div>
+
+
+    <section class="footer">
+        <h2>About US</h2>
+        <p>Empower your team to develop skills in all areas of business</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linked in"></i>
+        </div>
+     </section>
+</body>
+</html>

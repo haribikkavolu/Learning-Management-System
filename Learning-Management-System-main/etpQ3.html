@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Q3-a.css">
+</head>
+<body>
+<section class="tables">
+    <h1>Classic Movie Day</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>5 pm</th>
+            <th>7 pm</th>
+            <th>9 pm</th>
+            <th>11 pm</th>
+        </tr>
+        <tr>
+            <td>Screen one</td>
+            <td>star wars</td>
+            <td>Empire Strikes Back</td>
+            <td>Return of the Jedi</td>
+            <td>The Exorcist</td>
+        </tr>
+        <tr>
+            <td>screen two</td>
+            <td colspan="2">Dance with Wolves</td>
+            <td colspan="2">Gone With the Wind</td>
+        </tr>
+        <tr>
+            <td>Screen three</td>
+            <td colspan="2">2001 A Space Odyssey</td>
+            <td>The Conversation</td>
+            <td>5 Easy Pices</td>
+        </tr>
+    </table>
+</section>
+<h1>Multiplication Table</h1>
+    <p>Enter a number:</p>
+    <input type="text" id="number">
+    <button onclick="displayTable()">Display Table</button>
+    <p id="table"></p>
+
+    <script>
+      function displayTable() {
+        const number = document.getElementById('number').value;
+
+        let table = '';
+        for (let i = 1; i <= 20; i++) {
+          table += `${number} x ${i} = ${number * i}\n`;
+        }
+        document.getElementById('table').innerText = table;
+      }
+    </script>
+</body>
+</html>

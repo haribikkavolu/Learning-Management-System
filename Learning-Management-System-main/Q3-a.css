@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tables{
+    width: 80%;
+}
+table th,td{
+    border: 3px solid black;
+    padding: 10px;
+}
+h1{
+    margin-left: 30%;
+    font-size: 25px;
+}

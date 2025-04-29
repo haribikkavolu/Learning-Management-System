@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setnewimage(){
+            document.getElementById("asdf").src ="pic/logo1.png";
+        }
+        function setoldimage(){
+            document.getElementById("asdf").src ="pic/close.png";
+        }
+    </script>
+</head>
+<body>
+    <img id="asdf" onmouseover="setnewimage()" 
+    onmouseout="setoldimage()" src="pic/close.png">
+</body>
+</html>
